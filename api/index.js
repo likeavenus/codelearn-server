@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 });
 app.get('/favicon.ico', (req, res) => res.status(204));
 app.get('/', (req, res) => {
-    res.send('Codelearn server is running.');
+    res.send('<h1>Hello World</h1>');
     res.status(200);
 });
 
