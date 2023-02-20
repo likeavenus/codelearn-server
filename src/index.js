@@ -8,6 +8,7 @@ const port = 3000
 
 executeCode(app);
 
+app.get('/favicon.ico', (req, res) => res.status(204));
 app.get('/', (req, res) => {
     res.send('Codelearn server is running.');
     res.status(200);
