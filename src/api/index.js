@@ -10,6 +10,8 @@ executeCode(app);
 
 app.get('/favicon.ico', (req, res) => res.status(204));
 app.get('/', (req, res) => {
+    res.setHeader('Access-Control-Allow-Credentials', true)
+    res.setHeader('Access-Control-Allow-Origin', '*')
     res.send('Codelearn server is running.');
     res.status(200);
 })
