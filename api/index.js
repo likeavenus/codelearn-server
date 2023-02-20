@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.status(200);
 });
 
-app.post('/run-code', (req, res) => {
+app.post('/run-code', cors(), (req, res) => {
     const { body } = req;
     const vm = new VM({
         wasm: true,
