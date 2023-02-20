@@ -6,3 +6,4 @@ for = "/*"
   from = "/run-code"
   to = "https://heartfelt-taiyaki-ffff66.netlify.app/run-code"
   status = 200
+  force = true
