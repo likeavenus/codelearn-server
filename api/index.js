@@ -2,7 +2,7 @@ const express = require('express');
 const VM = require('vm2');
 const cors = require('cors');
 const app = express();
-app.use(cors(), express.json());
+app.use(express.json());
 const port = 3000;
 
 app.get('/favicon.ico', (req, res) => res.status(204));
@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     res.status(200);
 });
 
-app.post('/run-code', cors(), (req, res) => {
+app.post('/run-code', (req, res) => {
     const { body } = req;
     const vm = new VM({
         wasm: true,
