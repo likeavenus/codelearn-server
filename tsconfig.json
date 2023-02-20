@@ -3,12 +3,11 @@
         "esModuleInterop": true,
         "lib": [
             "es6",
-            "DOM"
         ],
         "target": "es6",
-        "module": "commonjs",
+        "module": "ESNext",
         "moduleResolution": "node",
-        "outDir": "dist",
+        "outDir": "./dist",
         "resolveJsonModule": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
