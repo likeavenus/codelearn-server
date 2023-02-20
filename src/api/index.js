@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const executeCode = require('./services/execCode/executeCode');
+const executeCode = require('../services/execCode/executeCode');
 
 const app = express()
 app.use(cors(), express.json());
