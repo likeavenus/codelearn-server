@@ -21,11 +21,5 @@
         }
       ]
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/run-code",
-      "destination": "/api/index.js"
-    }
   ]
 }

@@ -1,12 +1,13 @@
 const express = require('express');
 const VM = require('vm2');
+const allowCors = require('../allowCors');
 // const cors = require('cors');
 // const corsOptions = {
 //     origin: '*',
 //     credentials: true,
 //     optionSuccessStatus: 200,
 // }
-
+allowCors();
 const app = express()
 // app.use(cors(corsOptions), express.json());
 app.use(express.json());
