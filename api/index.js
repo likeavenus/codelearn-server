@@ -1,7 +1,7 @@
 const express = require('express');
 const VM = require('vm2');
 const cors = require('cors');
-const app = express()
+const app = express();
 app.use(cors(), express.json());
 const port = 3000;
 
