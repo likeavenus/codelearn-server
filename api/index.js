@@ -18,7 +18,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/run-code', (req, res) => {
-    if (req.method === 'OPTIONS') { return res.status(200).json(({ body: "OK" })) }
     const { body } = req;
     const vm = new VM({
         wasm: true,
