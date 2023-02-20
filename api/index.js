@@ -1,9 +1,14 @@
 const express = require('express');
 const VM = require('vm2');
 const cors = require('cors');
+const corsOptions = {
+    origin: '*',
+    credentials: true,
+    optionSuccessStatus: 200,
+}
 
 const app = express()
-app.use(cors(), express.json());
+app.use(cors(corsOptions), express.json());
 const port = 3000
 
 app.get('/favicon.ico', (req, res) => res.status(204));
