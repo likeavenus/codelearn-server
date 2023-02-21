@@ -5,7 +5,7 @@ const app = express();
 app.use(cors(), express.json());
 const port = 3000;
 
-app.get('/favicon.ico', (req, res) => res.status(204));
+// app.get('/favicon.ico', (req, res) => res.status(204));
 app.options('*', cors());
 app.get('/', (req, res) => {
     res.send('<h1>Hello World</h1>');
